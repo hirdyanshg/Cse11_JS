@@ -38,3 +38,9 @@ if(age>=18){
         alert("Hello World");
     }
 }
+{
+    let add2 = (a,b) => {
+        console.log(a+b);
+    };
+add2 (102,20);
+}
