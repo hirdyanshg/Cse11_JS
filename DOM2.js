@@ -40,3 +40,19 @@ function myBody(){
     alert("WINDOW LOADED SUCCESSFULLY");
 }
 }
+
+"members": [
+    {
+        "name": "Molecule Man",
+        "age": 29,
+        "seecretIdentity": "Dan Jukes",
+        "powers": [
+            "Radiation resistance","Turning tiny", "Radiation blast"]
+    },
+    {
+        "name": "Madame Uppercut",
+        "age": 39,
+        "seecretIdentity": "Jane Wilson",
+        "powers": ["Million tonne punch","Damage resistance", "Superhuman reflexes"]
+    }
+]
