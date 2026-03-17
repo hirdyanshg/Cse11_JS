@@ -12,10 +12,27 @@ x[0].innerHTML = "this is first para";
 const test = document.querySelector(".p1");
 test.style.color = "blue";
 test.style.backgroundColor = "yellow";
-test.padding = "10px";
+test.style.padding = "10px";
 const test2 = document.querySelectorAll("ul li");
 for(x in test2){
-    test2[x].style.backgroundColor = "yellow";
-    test2[x].padding = "10px";
-    test2[x].color = "blue";
+    test2[x].style.backgroundColor = "green";
+    test2[x].style.margin= "10px";
+    test2[x].style.color = "blue"
 }
+
+const element = document.getElementById("myH1");
+let text= element.getAttribute("class");
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(){
+    document.getElementById("myH2").setAttribute("class", "democlass");
+    alert("Attribute added successfully");
+}
+
+// create  an element
+const  heading = document.createElement("h2");
+//get the parent
+const bodytag = document.getElementsByTagName("body");
+//add element at the position using append method 
+bodytag[0].append(heading);
+heading.innerText = "hello";heading.style.backgroundColor = "pink";
