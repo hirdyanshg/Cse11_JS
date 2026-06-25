@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+.navbar{
+    background:#131921;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:15px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search{
+    display:flex;
+}
+
+.search input{
+    width:350px;
+    padding:10px;
+}
+
+.search button{
+    padding:10px;
+    background:#febd69;
+    border:none;
+    cursor:pointer;
+}
+
+.menu{
+    background:#232f3e;
+    padding:12px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+.hero{
+    background:#e3e6e6;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    margin-bottom:10px;
+}
+
+.heading{
+    text-align:center;
+    margin:30px 0;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.product{
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 10px lightgray;
+}
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin:10px 0;
+}
+
+.product p{
+    color:green;
+    font-weight:bold;
+}
+
+.product button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    background:#febd69;
+    cursor:pointer;
+}
+
+.deal{
+    background:#febd69;
+    text-align:center;
+    padding:40px;
+    margin-top:20px;
+}
+
+footer{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+footer small{
+    font-size:12px;
+    display:block;
+    margin-top:10px;
+    color:#cccccc;
+}
+
+.toast{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#28a745;
+    color:white;
+    padding:15px 20px;
+    border-radius:5px;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
+}
+
+.toast.show{
+    opacity:1;
+    visibility:visible;
+}
+
+@media(max-width:900px){
+
+.products{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.search input{
+    width:200px;
+}
+
+}
+
+@media(max-width:600px){
+
+.products{
+    grid-template-columns:1fr;
+}
+}
